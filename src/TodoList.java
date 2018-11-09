@@ -1,12 +1,28 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
 
 public class TodoList {
     /*
      * Add a new item to the list, given a description and priority.
+     * 
+     * 
      */
+	List <String> TodoList = new ArrayList<String>();
+	
+	
     public void addItem(String description, int priority) {
-        // TODO
+    	//items.put(description, priority); 
+    	//TodoList.set(priority, description);
+    	//String string = (String);
+    	Map <String, Integer> items = new HashMap<>();
+    	items.put(description, priority);
+    	TodoList.add(description);
+    	TodoList.add(priority, description);
+    	
+    	
+    	
     }
     
     /*
